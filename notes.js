@@ -53,7 +53,7 @@ const listNotes=()=>{
 }
 const readNotes=(title)=>{
     const notes=loadNotes();
-    const note=notes.find((singleNote)=>singleNote);
+    const note=notes.find((singleNote)=>singleNote.title===title);
     if(note)
     {
     console.log(chalk.bold.blueBright(note.title));
